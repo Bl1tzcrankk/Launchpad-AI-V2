@@ -23,7 +23,7 @@ class AsyncExtension {
     }
   
     fetch (args) {
-      return fetch("https://improved-journey-rqjg7jwppv4c5rg5-7000.app.github.dev/?prompt=" + args.URL)
+      return fetch("https://launchpad-ai-v2.onrender.com/?prompt=" + args.URL)
         .then((response) => {
           return response.text();
         })
