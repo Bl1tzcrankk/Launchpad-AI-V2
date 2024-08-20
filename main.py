@@ -1,8 +1,8 @@
 from flask import Flask, request, jsonify
-from flaskcors import CORS, crossorigin
+from flask_cors import CORS, cross_origin
 from g4f.client import Client
 
-app = Flask(name)
+app = Flask(__name__)
 CORS(app)
 
 @app.route("/")
@@ -19,5 +19,5 @@ def generateText():
         print(e)
         return jsonify({"success": False, "data": str(e)})
 
-if name == "__main":
+if __name__ == "__main__":
     app.run("0.0.0.0", 7000, debug=False)
