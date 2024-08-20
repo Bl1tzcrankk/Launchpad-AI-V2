@@ -55,8 +55,7 @@ class AsyncExtension {
     }
 
     fetchwm(args) {
-        // return fetch(`https://launchpad-ai-v2.onrender.com/wm?model=${args.MODEL}&prompt=${args.PROMPT}`)
-        return fetch(`http://127.0.0.1:5000/wm?model=${args.MODEL}&prompt=${args.PROMPT}`)
+        return fetch(`https://launchpad-ai-v2.onrender.com/wm?model=${args.MODEL}&prompt=${args.PROMPT}`)
             .then((response) => {
                 return response.text();
             })
