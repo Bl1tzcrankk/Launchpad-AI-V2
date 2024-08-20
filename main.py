@@ -20,5 +20,9 @@ def generateText():
         print(e)
         return jsonify({"success": False, "data": str(e)})
 
+@app.route("/act")
+def act():
+    return "hi"
+
 if __name__ == "__main__":
     app.run("0.0.0.0", int(os.environ.get("PORT", "5000")), debug=False)
