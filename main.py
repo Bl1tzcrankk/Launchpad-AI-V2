@@ -20,4 +20,4 @@ def generateText():
         return jsonify({"success": False, "data": str(e)})
 
 if __name__ == "__main__":
-    app.run("0.0.0.0", 7000, debug=False)
+    app.run("0.0.0.0", 5000, debug=False)
